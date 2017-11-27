@@ -11,7 +11,7 @@ Using go 1.9.2 or higher:
 ```
 #!bash
 
-git install github.com/greatercommonsfernando/goenv
+go install github.com/greatercommonsfernando/goenv
 ```
 ### Usage ###
 
@@ -46,9 +46,8 @@ source ~/projects/test_go_project/bin/activate
 ### Dependencies ###
 
 * bash (Linux, MacOS) or cmd (Windows)
-* find
-* install
-* A working Go 1.3+ installation
+* A working Go 1.9+ installation
+** Testing
 
 ### Contribution guidelines ###
 
