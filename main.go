@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"fmt"
-	"goenv/lib"
+	"github.com/greatercommonsfernando/goenv/lib"
 )
 
 func main() {
