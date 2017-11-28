@@ -9,7 +9,9 @@ import (
 func main() {
 	switch {
 	case len(os.Args) >= 2:
-		lib.CreateGoEnv(os.Args[1])
+		if err := lib.CreateGoEnv(os.Args[1]); err != nil {
+			panic(err)
+		}
 	default:
 		fmt.Println("You must provide a destination folder")
 		lib.Usage()

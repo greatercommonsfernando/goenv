@@ -52,7 +52,9 @@ func CreateGoEnv(path string) error {
 	if err := EnsurePathExists(binPath); err != nil {
 		return err
 	}
-	WriteActivateScript(binPath)
+	if err := WriteActivateScript(binPath); err != nil {
+		return err
+	}
 	if err := EnsurePathExists(fmt.Sprintf("%s/pkg", path)); err != nil {
 		return err
 	}
